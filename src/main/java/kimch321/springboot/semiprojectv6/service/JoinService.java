@@ -1,6 +1,6 @@
-package kimch321.springboot.semiprojectv6boot.service;
+package kimch321.springboot.semiprojectv6.service;
 
-import kimch321.springboot.semiprojcectv5.model.Member;
+import kimch321.springboot.semiprojectv6.model.Member;
 
 public interface JoinService {
 

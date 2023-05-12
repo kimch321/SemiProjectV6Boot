@@ -1,6 +1,6 @@
-package kimch321.springboot.semiprojectv6boot.dao;
+package kimch321.springboot.semiprojectv6.dao;
 
-import kimch321.springboot.semiprojcectv5.model.Board;
+import kimch321.springboot.semiprojectv6.model.Board;
 
 import java.util.List;
 import java.util.Map;

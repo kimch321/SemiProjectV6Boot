@@ -4,7 +4,7 @@
 <mapper namespace="member">
 
     <select id="selectLogin" statementType="PREPARED"
-            parameterType="kimch321.springboot.semiprojcectv5.model.Member"
+            parameterType="kimch321.springboot.semiprojectv6.model.Member"
             resultType="int">
         select count(userid) cnt from member2 where userid = #{userid} and passwd = #{passwd};
     </select>

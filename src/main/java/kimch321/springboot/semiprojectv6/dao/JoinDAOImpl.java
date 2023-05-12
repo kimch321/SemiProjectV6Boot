@@ -1,7 +1,7 @@
-package kimch321.springboot.semiprojectv6boot.dao;
+package kimch321.springboot.semiprojectv6.dao;
 
-import kimch321.springboot.semiprojcectv5.model.Member;
-import kimch321.springboot.semiprojcectv5.model.Zipcode;
+import kimch321.springboot.semiprojectv6.model.Member;
+import kimch321.springboot.semiprojectv6.model.Zipcode;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;

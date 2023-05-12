@@ -1,4 +1,4 @@
-package kimch321.springboot.semiprojectv6boot.controller;
+package kimch321.springboot.semiprojectv6.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +16,7 @@ public class GalleryController {
 
         mv.addObject("cpg",cpg);
         mv.addObject("stpg",((cpg-1)/10)*10 + 1);
-        mv.setViewName("gallery/list.tiles");
+        mv.setViewName("gallery/list");
         return mv;
     }
 

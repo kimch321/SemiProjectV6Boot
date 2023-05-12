@@ -1,4 +1,4 @@
-package kimch321.springboot.semiprojectv6boot.model;
+package kimch321.springboot.semiprojectv6.model;
 
 import lombok.Data;
 

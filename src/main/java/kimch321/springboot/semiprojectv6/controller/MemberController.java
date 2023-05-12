@@ -1,7 +1,7 @@
-package kimch321.springboot.semiprojectv6boot.controller;
+package kimch321.springboot.semiprojectv6.controller;
 
-import kimch321.springboot.semiprojcectv5.model.Member;
-import kimch321.springboot.semiprojcectv5.service.MemberService;
+import kimch321.springboot.semiprojectv6.model.Member;
+import kimch321.springboot.semiprojectv6.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

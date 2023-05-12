@@ -1,7 +1,7 @@
-package kimch321.springboot.semiprojectv6boot.controller;
+package kimch321.springboot.semiprojectv6.controller;
 
-import kimch321.springboot.semiprojcectv5.model.Board;
-import kimch321.springboot.semiprojcectv5.service.BoardService;
+import kimch321.springboot.semiprojectv6.model.Board;
+import kimch321.springboot.semiprojectv6.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,7 +26,7 @@ public class BoardController {
         mv.addObject("stpg",((cpg-1)/10)*10 + 1);
         mv.addObject("cntpg",bdsrv.countBoard());
 
-        mv.setViewName("board/list.tiles");
+        mv.setViewName("board/list");
         return mv;
     }
 
@@ -38,18 +38,18 @@ public class BoardController {
         mv.addObject("cpg", cpg);
         mv.addObject("stpg", ((cpg - 1) / 10) * 10 + 1);
         mv.addObject("cntpg", bdsrv.countBoard(ftype, fkey));
-        mv.setViewName("board/list.tiles");
+        mv.setViewName("board/list");
         return mv;
     }
 
     @GetMapping("/write")
     public String write() {
-        return "board/write.tiles";
+        return "board/write";
     }
 
     @PostMapping("/write")
     public String writeok(Board bd) {
-        String viewPage = "error.tiles";
+        String viewPage = "error";
 
         if(bdsrv.newBoard(bd))
             viewPage = "redirect:/board/list?cpg=1";
@@ -60,7 +60,7 @@ public class BoardController {
     public ModelAndView view(String bno) {
         ModelAndView mv = new ModelAndView();
         mv.addObject("bd",bdsrv.readOneBoard(bno));
-        mv.setViewName("board/view.tiles");
+        mv.setViewName("board/view");
 
         return mv;
     }

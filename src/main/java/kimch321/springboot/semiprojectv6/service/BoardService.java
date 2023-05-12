@@ -1,6 +1,6 @@
-package kimch321.springboot.semiprojectv6boot.service;
+package kimch321.springboot.semiprojectv6.service;
 
-import kimch321.springboot.semiprojcectv5.model.Board;
+import kimch321.springboot.semiprojectv6.model.Board;
 
 import java.util.List;
 

@@ -5,7 +5,7 @@
 
     <select id="findZipcode" statementType="PREPARED"
             parameterType="String"
-            resultType="kimch321.springboot.semiprojcectv5.model.Zipcode">
+            resultType="kimch321.springboot.semiprojectv6.model.Zipcode">
         select zipcode, sido, gugun, dong, ri, bunji from ZIPCODE where dong like #{dong}
     </select>
 
@@ -16,7 +16,7 @@
     </select>
 
     <insert id="insertMember" statementType="PREPARED"
-            parameterType="kimch321.springboot.semiprojcectv5.model.Member">
+            parameterType="kimch321.springboot.semiprojectv6.model.Member">
         insert into member2 (name, jumin1, jumin2, userid, passwd, zipcode, addr1, addr2, email, phone) VALUES (#{name}, #{jumin1}, #{jumin2}, #{userid}, #{passwd}, #{zipcode}, #{addr1}, #{addr2}, #{email}, #{phone})
     </insert>
 
