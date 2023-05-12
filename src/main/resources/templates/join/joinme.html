@@ -40,7 +40,7 @@
               <label class="col-2 form-label text-danger text-end"
                      for="name">이름</label>
               <div class="col-3 ">
-                <input type="text" name="name" id="name" readonly class="form-control border-danger bg-light" value="${mb.name}">
+                <input type="text" name="name" id="name" readonly class="form-control border-danger bg-light" th:value="${mb.name}">
               </div>
             </div>
           </div>
@@ -52,10 +52,10 @@
               <label class="col-2 form-label text-danger text-end"
                      for="jumin1a">주민번호</label>
               <div class="col-3">
-                <input type="text" name="jumin1" id="jumin1a" class="form-control border-danger bg-light" value="${mb.jumin1}" readonly>
+                <input type="text" name="jumin1" id="jumin1a" class="form-control border-danger bg-light" th:value="${mb.jumin1}" readonly>
               </div>
               <div class="col-3">
-                <input type="text" name="jumin2" id="jumin2a" class="form-control border-danger bg-light" value="${mb.jumin2}" readonly>
+                <input type="text" name="jumin2" id="jumin2a" class="form-control border-danger bg-light" th:value="${mb.jumin2}" readonly>
               </div>
             </div>
           </div>
